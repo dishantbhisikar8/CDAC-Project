@@ -270,6 +270,20 @@ const BookFlight = () => {
               </div>
 
               <div className="col-md-6 mb-3 text-color">
+                <b>
+                  <label className="form-label">Passenger Name</label>
+                </b>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="PassengerName"
+                  name="PassengerName"
+                  onChange={handleUserInput}
+                  value={flight.totalPassengers}
+                />
+              </div>
+
+              <div className="col-md-6 mb-3 text-color">
                 <label htmlFor="trainId" className="form-label">
                   <b>Flight Class type</b>
                 </label>

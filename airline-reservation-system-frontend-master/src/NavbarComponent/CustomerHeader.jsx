@@ -17,6 +17,8 @@ const CustomerHeader = () => {
     });
     sessionStorage.removeItem("active-passenger");
     sessionStorage.removeItem("passenger-jwtToken");
+    sessionStorage.removeItem("email");
+
 
     setTimeout(() => {
       navigate("/home");

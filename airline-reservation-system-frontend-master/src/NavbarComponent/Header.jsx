@@ -39,7 +39,7 @@ const Header = () => {
                   className="nav-link active"
                   aria-current="page"
                 >
-                  <b className="text-color">About Us</b>
+                  <b className="text-color">Feedback</b>
                 </Link>
               </li>
 
@@ -61,6 +61,12 @@ const Header = () => {
                 >
                   <b className="text-color">View Flights</b>
                 </Link>
+              </li>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <li className="nav-item">
+                {sessionStorage.getItem("email")!==null &&(
+                  <b className="text-color">Hello {sessionStorage.getItem("email")}</b>
+                  )}
               </li>
             </ul>
 

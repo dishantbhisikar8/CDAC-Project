@@ -42,8 +42,9 @@ public class FlightController {
 	
 	@GetMapping("/search")
 	@ApiOperation(value = "Api to search the flights")
-	public ResponseEntity<FlightResponseDto> searchFlights(@RequestParam("fromAirportId") int fromAirportId, @RequestParam("endAirportId") int endAirportId
-			,@RequestParam("startTime") String startTime, @RequestParam("endTime") String endTime) {
+	public ResponseEntity<FlightResponseDto> searchFlights(@RequestParam("fromAirportId") int fromAirportId, 
+			@RequestParam("endAirportId") int endAirportId,
+			@RequestParam("startTime") String startTime, @RequestParam("endTime") String endTime) {
 		return flightResource.fetchAllFlightsByTimeRange(fromAirportId, endAirportId ,startTime, endTime);
 	}
 	

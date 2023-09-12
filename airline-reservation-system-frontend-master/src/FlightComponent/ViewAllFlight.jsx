@@ -114,8 +114,9 @@ const ViewAllFlight = () => {
   };
 
   const searchScheduledTrains = (e) => {
-    setSearchRequest(tempSearchRequest);
     e.preventDefault();
+    setSearchRequest(tempSearchRequest);
+    
   };
 
   const formatDateFromEpoch = (epochTime) => {

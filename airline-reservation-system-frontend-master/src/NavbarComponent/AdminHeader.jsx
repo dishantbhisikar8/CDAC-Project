@@ -20,6 +20,7 @@ const AdminHeader = () => {
     });
     sessionStorage.removeItem("active-admin");
     sessionStorage.removeItem("admin-jwtToken");
+    sessionStorage.removeItem("email");
     setTimeout(() => {
       navigate("/home");
     }, 1000); // Redirect after 3 seconds

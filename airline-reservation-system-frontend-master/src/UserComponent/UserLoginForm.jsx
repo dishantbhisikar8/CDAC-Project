@@ -30,6 +30,7 @@ const UserLoginForm = () => {
             console.log("Got the success response");
 
             if (res.jwtToken !== null) {
+              sessionStorage.setItem("email", res.user.email);
               if (res.user.roles === "ADMIN") {
                 sessionStorage.setItem(
                   "active-admin",
